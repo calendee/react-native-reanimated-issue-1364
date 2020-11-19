@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
+
+import { AnimatedDemo } from "./AnimatedDemo";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.text}>Demo w/ Expo & react-native-animated v2</Text>
+      <Text style={styles.text}>Issue #1364</Text>
       <StatusBar style="auto" />
-    </View>
+      <AnimatedDemo />
+    </SafeAreaView>
   );
 }
 
@@ -17,5 +21,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 20,
   },
+  text: {
+    fontSize: 18,
+    textAlign: "center",
+    marginBottom: 10
+  }
 });
