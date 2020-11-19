@@ -1,0 +1,12 @@
+{
+  "name": "TurboModuleRegistry-RNW",
+  "displayName": "TurboModuleRegistry-RNW",
+  "expo": {
+    "name": "TurboModuleRegistry-RNW",
+    "slug": "TurboModuleRegistry-RNW",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
